@@ -20,8 +20,10 @@ function MovieDetails() {
     
     return (
         <div className="detailsContainer">
-            <img src={imageUrl} alt={movie.title} className="movieImage" />
-            <div className="movieDetails">
+            <img src={imageUrl} alt={movie.title} className="col 
+            movieImage" />
+            <div className="col 
+            movieDetails">
                 <h2>{movie.title}</h2>
                 <p><strong>Géneros:</strong> {movie.genres?.map(g => g.name).join(", ")}</p>
                 <p><strong>Descripción:</strong> {movie.overview}</p>

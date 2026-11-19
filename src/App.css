@@ -1,0 +1,33 @@
+.title{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 3rem;
+    color: #e6b209;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+    background-color: #727c19; 
+    border-top: 1px solid #e6ffad2d;
+}
+.footer-info {
+    margin-bottom: 20px;
+}
+.footer-info p {
+    margin: 5px 0; 
+    line-height: 1.5;
+}
+.footer-logo {
+    display: flex;
+    justify-content: center;
+}
+.escudo-cucei {
+    width: 120px; 
+    height: auto;
+    margin-top: 10px;
+}
