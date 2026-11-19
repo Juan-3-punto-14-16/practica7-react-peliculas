@@ -7,8 +7,8 @@ function MovieCard({ title, posterPath, movieId }) {
         <li className="movie-card">
             <Link to={`/movies/${movieId}`} className="link-no-underline">
                 <img src={imageUrl} alt={title} className="movie-img" />
-                <h2 className="movie-title">{title}</h2>
             </Link>
+            <h2 className="movie-title">{title}</h2>
         </li>
     );
 }
