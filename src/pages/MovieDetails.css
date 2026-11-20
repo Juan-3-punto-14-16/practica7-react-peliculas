@@ -2,6 +2,10 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 60px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .col {
     max-width: 400px;
@@ -10,13 +14,36 @@
     width: 80%;
 }
 .movieImage {
+    width: 100%;
+    max-width: 550px;
     border-radius: 15px;
-    object-fit: cover;
 }
 .title {
-    margin-top: 0;
+    margin-top: 20px;
 }
 .movieDetails {
     font-size: 1.5rem;
-
+    margin-bottom: 20px;
+}
+.movie-genres{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.movie-overview{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+    .detailsContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .movieDetails {
+        max-width: 100%;
+    }
+}
+.loading {
+    font-size: 1.5rem;
+    text-align: center;
 }
