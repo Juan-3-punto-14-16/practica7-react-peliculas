@@ -1,33 +1,56 @@
+header{
+    margin-top: 40px;
+}
 .title{
-    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 3rem;
     color: #e6b209;
 }
 .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; 
+    padding: 40px 50px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    background-color: rgba(0, 0, 0, 0.2); 
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-column {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-    padding: 30px 20px;
-    font-size: 0.9rem;
-    background-color: #727c19; 
-    border-top: 1px solid #e6ffad2d;
+    text-align: center; 
 }
-.footer-info {
-    margin-bottom: 20px;
+
+.footer-column h3 {
+    color: #e6b209;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
 }
-.footer-info p {
-    margin: 5px 0; 
+
+.footer-column p {
+    margin: 5px 0;
     line-height: 1.5;
 }
-.footer-logo {
-    display: flex;
-    justify-content: center;
-}
+
 .escudo-cucei {
-    width: 120px; 
+    width: 90px;
     height: auto;
-    margin-top: 10px;
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-column {
+        align-items: center;
+        text-align: center;
+    }
 }

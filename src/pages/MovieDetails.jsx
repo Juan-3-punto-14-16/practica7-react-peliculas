@@ -14,19 +14,17 @@ function MovieDetails() {
             .catch((error) => console.error(error));
     }, [movieId]);
     
-    if (!movie) return <p>Cargando información...</p>;
+    if (!movie) return <p className="loading">Cargando información...</p>;
     
     const imageUrl = getMovieImg(movie.poster_path, 500);
     
     return (
         <div className="detailsContainer">
-            <img src={imageUrl} alt={movie.title} className="col 
-            movieImage" />
-            <div className="col 
-            movieDetails">
+            <img src={imageUrl} alt={movie.title} className="col movieImage" />
+            <div className="col movieDetails">
                 <h2>{movie.title}</h2>
-                <p><strong>Géneros:</strong> {movie.genres?.map(g => g.name).join(", ")}</p>
-                <p><strong>Descripción:</strong> {movie.overview}</p>
+                <p className="movie-genres"><strong>Géneros:</strong> {movie.genres?.map(g => g.name).join(", ")}</p>
+                <p className="movie-overview"><strong>Descripción:</strong> {movie.overview}</p>
             </div>
         </div>
     );
