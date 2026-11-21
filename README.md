@@ -3,8 +3,8 @@
 ## Integrantes
 * **Moisés Alejandro Fernández Hernández** – Cliente HTTP (`httpClient`), página principal (`LandingPage`), cuadrícula de películas (`MovieGrid`), tarjeta (`MovieCard`) y pie de página.
 * **César Emanuel Hernández Pérez** – Diseño responsivo y hojas de estilo CSS de los componentes y vistas.
-* **Yara Susana Vera Godínez** – Enrutamiento (`AppRouter`), vista de detalle (`MovieDetails`), helper de imágenes y despliegue en Netlify.
-* **Juan Pablo Valladolid Ramirez** – Configuración del entorno base, repositorio en GitHub, gestión de variables de entorno y documentación.
+* **Yara Susana Vera Godínez** – Punto de entrada (`main`), estructura principal (`App`), helper de imágenes (`getMovieImg`), enrutamiento (`AppRouter`), vista de detalle (`MovieDetails`) y despliegue en Netlify.
+* **Juan Pablo Valladolid Ramirez** – Configuración del entorno base, creación y administración del repositorio en GitHub, gestión de variables de entorno y documentación.
 
 ## Descripción
 Aplicación web tipo SPA (*Single Page Application*) desarrollada con React y Vite que consume la API pública de **The Movie Database (TMDB)** para mostrar un catálogo interactivo de películas y la vista detallada de cada título.
@@ -86,11 +86,14 @@ Se utiliza la API REST de **The Movie Database (TMDB)** (`https://api.themoviedb
 3. **Resiliencia:** Si una película no cuenta con imagen en la API, `getMovieImg` asigna automáticamente `placeholder.png`. En producción, `public/_redirects` garantiza que el acceso directo a rutas internas funcione sin errores 404.
 
 ## Despliegue
-* **Repositorio en GitHub:** `https://github.com/Juan-3-punto-14-16/practica7-react-peliculas.git`
-* **Aplicación en Netlify:** `PENDIENTE`
+* **Repositorio en GitHub:** `https://github.com/Juan-3-punto-14-16/practica7-react-peliculas`
+* **Aplicación en Netlify:** `https://practica7-react.netlify.app/`
 
 ## Conclusiones
-* **Moy Alejandro Fernández Hernández:** X
-* **César Emanuel Hernández Pérez:** X
-* **Yara Susana Vera Godínez:** X
-* **Juan Pablo Valladolid Ramirez:** X
+* **Moy Alejandro Fernández Hernández:** Este proyecto me ayudó bastante a poner en práctica todo lo visto en clase, detectar errores sobre la marcha y reafirmar realmente lo aprendido. Además, me gustó mucho la dinámica de trabajo en equipo, ya que logramos organizarnos bien desde el inicio, resolver los detalles sin fricciones y sacar todo adelante en tiempo y forma.
+
+* **César Emanuel Hernández Pérez:** Con esta práctica aprendí nuevas herramientas con las que puedo desarrollar una página web, esta vez con React, me gusta la idea de programarlo y armarlo en trozos, siento que al final tienes una forma mucho más estructurada y cómoda de ver el proyecto, en si me gusto mucha la forma en la que se fue trabajando y el uso que se le dio a esta herramienta, que si bien al inicio como siempre por ser nueva me pareció un poco difícil ya que no tenía idea de cómo es que funcionaba, pero conforme iba viendo el video y se iba trabajando en la pagina me pude dar una idea mucho más amplia de cómo es que se usa y cómo se va conectando.
+
+* **Yara Susana Vera Godínez:** Al trabajar en esta práctica logré ver que el usar algunas herramientas, como Github, facilitan el trabajar en equipo, ya que te ayudan a unir partes del proyecto y verificar que no choquen entre ellas. Igual el usar React me ayudó a ver otra forma de armar un proyecto, a dividirlo en componentes que se pueden reutilizar. Todo esto es nuevo y me dejó un gran aprendizaje, creo que aún puedo aprender más, porque sí me parecen herramientas interesantes de implementar.
+
+* **Juan Pablo Valladolid Ramirez:** Gracias a esta práctica aprendí una nueva forma de programar una página web: utilizando React. Me parece muy interesante como su paradigma consiste en programar por componentes, es decir, lo que haces es armar la página pedacito por pedacito (componente por componente), en vez de tener un archivo que representa una página del sitio web. Es algo super modular, y me resulta bastante fascinante como se inspiraron en el principio de las funciones, porque a final de cuentas los componentes son literalmente una función que retorna un pedazo de una vista. Me resultó una práctica bastante enriquecedora y estoy bastante seguro de que quiero empaparme más de React en un futuro.
